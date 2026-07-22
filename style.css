@@ -1,0 +1,161 @@
+body{
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000003226_1714596295_pics1.png);
+    background-repeat: no-repeat;
+    
+}
+
+
+
+header{
+    background-color: rgb(53, 11, 140);
+    color: white;
+    text-align: center;
+   position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    
+}
+.overlay{
+    position: absolute;
+    top: 10%;
+    left: 26%;
+    color: white;
+    text-align: center;
+    width: 50%;
+    
+    
+    
+
+}
+#rahul{
+    border: 7px white solid;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000003227_1714596308_pics2.png);
+   
+    margin: 262px;
+    margin-left: 41px;
+    width: 176px;
+    height: 58px;
+    padding: 76px;
+    
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    color: white;
+    display: inline-block;
+    
+}
+.dravid-text{
+    margin-top:97px ;
+    font-weight: bold;
+
+
+}
+#bharat{
+    border: 7px white solid;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000003228_1714596324_pics3.png);
+   
+    margin-top: -195px;
+    margin-left: -140px;
+    width: 176px;
+    height: 58px;
+    padding: 76px;
+    
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    color: white;
+    display: inline-block;
+    vertical-align: text-top;
+
+}
+.bharat{
+    margin-top:97px ;
+    font-weight: bold;
+
+}
+#dilip{
+    border: 7px white solid;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000003229_1714596356_pics4.png);
+   
+    margin-top: -195px;
+    margin-left: 100px;
+    width: 176px;
+    height: 58px;
+    padding: 76px;
+    
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    color: white;
+    display: inline-block;
+    vertical-align: text-top;
+}
+.dilip{
+    margin-top:97px ;
+    font-weight: bold;
+
+}
+.list{
+    border: 5px white solid;
+    text-align: center;
+    width: 386px;
+    height: 349px;
+    color:rgb(53, 11, 140) ;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 500px;
+    font-weight: bolder;
+    overflow: scroll;
+    margin-top: -159px;
+    
+}
+img{
+    border-radius: 10px;
+    width: 376px;
+    height: 273px;
+    
+}
+.main-heading{
+    margin-bottom: -57px;
+}
+.ranking th{
+    background-color:rgb(53, 11, 140) ;
+    color: white;
+    width: 600px;
+    text-align: left;
+    padding: 10px;
+}
+.ranking td{
+    background-color: white;
+    color:rgb(53, 11, 140) ;
+    border:1px #dfdede solid ;
+    padding: 10px;
+    
+    
+}
+table{
+    margin: 49px;
+    margin-top: 38px;
+    margin-left: 66px;
+    font-family: system-ui;
+    border-collapse: collapse;
+    font-weight: bold;
+}
+footer{
+    background-color:rgb(53, 11, 140) ;
+    color: white;
+    text-align: center;
+    
+    margin: -14px;
+    margin-bottom: -28px;
+}
+
+
+
+
+
