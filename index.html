@@ -1,70 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cricket Website</title>
-    <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
 </head>
-<body>
-    <header>
-        <h1>National Cricket Team</h1>
-    </header>
-    <main>
-        <section class="main-heading">
-            
-            <div class="overlay">
-               <h2>Indian Cricket Team</h2>
-            <h2>The Heart and soul of India</h2>
+<body class="bg-dark">
+  <header>
+    <div class="top d-flex justify-content-between align-items-center p-3">
+      <div>
+        <h3 class="text-light display-6 ms-5 p-3">Credit Card Company</h3>
+      </div>
+      <div class="d-flex align-items-center">
+        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+        <button data-bs-toggle="modal" data-bs-target="#Modal1" class="btn btn-primary ms-2" type="submit">Search</button>
+      </div>
+    </div>
+  </header>
+  <div>
+    <h1 class="fw-lighter text-light text-center display-1">Payment Gateway</h1>
+  </div>
+  <div class="modal" id="Modal1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Search Information</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         <p>Please enter your search query to find relevant information.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Search Now</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    <div class="container my-5">
+      <div class="row g-4">
+        <div class="col-8">
+          <h2 class="text-light" >Billing address</h2>
+          <form class="row g-3">
+            <div class="col-md-6">
+            <label class="form-label text-light" for="fname">Full Name</label>
+            <input class="form-control" type="text" id="fname" name="firstname" placeholder="John M.">
+          </div>
+            <div class="col-md-6">
+            <label class="form-label text-light" for="lastname">Last Name</label>
+            <input class="form-control" type="text" id="lastname" name="lastname" placeholder="Doe">
+          </div>
+          <div class="col-12">
+            <label class="form-label text-light" for="username">Username</label>
+            <div class="input-group">
+              <span class="input-group-text">@</span>
+              <input class="form-control" type="text" id="username" name="username" placeholder="Username">
             </div>
-             </section>
-             <section>
-        <div id="rahul">
-            <div class="dravid-text">Rahul Dravid <br/>
-            Coach</div>
+          </div>
+          <div class="col-12">
+            <label class="form-label text-light" for="email">Email</label>
+            <input class="form-control" type="email" id="email" name="email" placeholder="you@example.com"/>
+          </div>
+          <div class="col-12">
+            <label class="form-label text-light" for="address">Address</label>
+            <input class="form-control" type="text" id="address" name="address" placeholder="1234 Main St"/>
+          </div>
+          <div class="col-12">
+            <label class="form-label text-light" for="address2">Address 2</label>
+            <input class="form-control" type="text" id="address2" name="address2" placeholder="Apartment or suite"/>
+          </div>
+          <div class="col-md-5">
+            <label class="form-label text-light" for="country">Country</label>
+            <select class="form-select" id="country" name="country">
+              <option selected value="">Choose...</option>
+              <option value="US">United States</option>
+              <option value="CA">Canada</option>
+              <option value="GB">United Kingdom</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label text-light" for="state">State</label>
+            <select class="form-select" id="state" name="state">
+              <option selected value="">Choose...</option>
+              <option value="US">California</option>
+              <option value="CA">Ontario</option>
+              <option value="GB">England</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label text-light" for="zip">Zip</label>
+            <input class="form-control" type="text" id="zip" name="zip" placeholder="L2J 1B8" />
+          </div>
+          <hr class="text-white"/>
+           <div>
+            <input type="checkbox" id="shipping" name="shipping"/>
+            <label class="form-label text-light">Shipping address is the same as my billing address. </label>
+           </div>
+           <div>
+            <input type="checkbox" id="shipping" name="shipping"/>
+            <label class="form-label text-light">Save this information for the next time. </label>
+           </div>
+           <hr class="text-white"/>
+           <div>
+            <h2 class="text-light">Payment</h2>
+           </div>
+           <div class="form-check">
+            <input class="form-check-input" name="check" type="radio" id="creditcard"/>
+            <label class="form-check-label text-light" for="creditcard">Credit card</label>
             </div>
+            <div class="form-check mt-2">
+            <input class="form-check-input" name="check" type="radio" id="debitcard"/>
+            <label class="form-check-label text-light" for="debitcard">Debit card</label>
+            </div>
+            <div class="form-check mt-2">
+            <input class="form-check-input" name="check" type="radio" id="paypal"/>
+            <label class="form-check-label text-light" for="paypal">Paypal </label>
+            </div>
+            <div class="col-6">
+              <label class="form-label text-light" for="name"  >Name on card</label>
+              <input type="text" placeholder="jeo.e" id="name" class="form-control"/>
+              </div>
+            <div class="col-6"> 
+              <label class="form-label text-light" for="number"  >Credit card number</label>
+              <input type="text" id="number" placeholder="1234 1233 2343 2334" class="form-control"/>
+              </div> 
+              <div class="col-6">
+              <label class="form-label text-light" for="ex"  >Expiration</label>
+              <input type="text" id="ex" placeholder="7/30" class="form-control"/>
+              </div>
+            <div class="col-6"> 
+              <label class="form-label text-light" for="cc" >Cvv</label>
+              <input type="text" id="cc" placeholder="***" class="form-control"/>
+              </div> 
+              <hr/>
+              
+                <button class="btn btn-primary col-12" type="button">Continue to checkout</button>
+              
+
+
             
+           
+           
         
-            <div id="bharat">
-                <div class="bharat">Bharat Arun <br/> Bowling Coach</div>
+
+          </form>
+        </div>
+        <div class="col-md-4">
+        <h2 class="text-light mb-3 d-flex justify-content-between">
+          <span>Your Cart</span>
+          <span class="badge bg-secondary rounded-pill">3</span>
+        </h2>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between align-items-start lh-sm">
+            <div>
+              <h6 class="my-0">Product name</h6>
+              <small class="text-muted">Brief description</small>
             </div>
-            <div id="dilip">
-                <div class="dilip">T. Dilip <br/> Fielding Coach</div>
-            </div>
-        </section>
-        <section class="list">
-            <h2>Star Players</h2>
-            <img width="300px" height="300px" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000003230_1714596372_pics5.png"/>
-            <div>Virat Kohli-Batsman</div>
-            <img width="300px" height="300px" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000003231_1714596390_pics6.png"/>
-            <div>Rohit Sharma-Captain</div>
-            <img width="300px" height="300px" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000003232_1714596401_pics7.png"/>
-            <div>Ravindra Jadeja-All Rounder</div>
-        </section>
-        <table class="ranking">
-            <tr>
-                <th>Format</th>
-                <th>Ranking</th>
-            </tr>
-            <tr>
-                <td>ODI Ranking</td>
-                <td>First</td>
-            </tr>
-            <tr>
-                <td>Test Ranking</td>
-                <td>First</td>
-            </tr>
-            <tr>
-                <td>T20 Ranking</td>
-                <td>First</td>
-            </tr>
-        </table>
-    </main>
-    <footer>
-        <h3>&copy; 2024 BCCI</h3>
-        <h2>Indian Cricket Team</h2>
-        <h3>Estabalished:1928</h3>
-         <h3>Location:Churchgate, Mumbai</h3>
-    </footer>
+            <span class="text-muted">$12</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start lh-sm">
+      <div>
+        <h6 class="my-0">Second product</h6>
+        <small class="text-muted">Brief description</small>
+      </div>
+      <span class="text-muted">$8</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start lh-sm">
+      <div>
+        <h6>Third item</h6>
+        <small class="text-muted">Brief description</small>
+      </div>
+      <span class="text-muted">$5</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between bg-light text-success lh-sm">
+      <div>
+        <h6 class="my-0">Promo code</h6>
+        <small>EXAMPLECODE</small>
+      </div>
+      <span>-$5</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between bg-black text-light lhh-sm">
+     <div>
+      <h6 class="my-0">Total(USD)</h6>
+      </div>
+      <span>-$20</span>
+      
+
+    </li>
+
+        </ul>
+        <form class="card p-2">
+        <div class="input-group">
+          <input class="form-control" type="text" placeholder="Promo code"/>
+          <button data-bs-toggle="modal" data-bs-target="#Modal2" class="btn btn-secondary" type="button">Redeem</button>
+        </div>
+        </form>
+        <div class="modal" id="Modal2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Redeem promo code</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         <p>Please enter your promo code to redeem the offer.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Redeem</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="g-3 card mt-3 p-3 bg-dark">
+      <div class="card-item">
+        <img class=" w-100 h-100 object-fit-contain" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC7rqow3i6cRa8VsgaB5SdsUgTo10wzROyrzbpTgV54g&s=10"/>
+      </div>
+      <div class=" mt-3 card-item">
+        <img class=" w-100 h-100 object-fit-contain"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUGTQdHJ5sFMBy3kKIyDIrTQM2YFF1rsHK8eO2OKk4rg&s=10"/>
+      </div>
+      <div class="card-item mt-3">
+        <img class=" w-100 h-100 object-fit-contain"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy1myXbcVoHRJjZWfjra9LXh6tdDSYQxv3bw66RRrdGA&s=10"/>
+      </div>
+    </div>
+        
+        
+          
+            
+
+          </div>
+         
+        </div>
+       
+      </div>
+      
+    </div>
+    
+      
+    
+ 
+
 </body>
 </html>
